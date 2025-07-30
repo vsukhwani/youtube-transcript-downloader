@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Transcript Downloader</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>YouTube Transcript Downloader</h1>
+        </div>
+        
+        <div class="content">
+            <div id="status" class="status">
+                <p>Loading...</p>
+            </div>
+            
+            <div id="video-info" class="video-info" style="display: none;">
+                <h3 id="video-title">Video Title</h3>
+                <p id="video-url">Video URL</p>
+            </div>
+            
+            <div id="controls" class="controls" style="display: none;">
+                <div class="format-selection">
+                    <label>Download Format:</label>
+                    <select id="format-select">
+                        <option value="text">Text (.txt)</option>
+                        <option value="json">JSON (.json)</option>
+                    </select>
+                </div>
+                
+                <button id="download-btn" class="download-button">
+                    <span class="button-text">Download Transcript</span>
+                    <span class="loading" style="display: none;">Downloading...</span>
+                </button>
+            </div>
+            
+            <div id="error" class="error" style="display: none;">
+                <p id="error-message">Error message will appear here</p>
+                <div class="instructions">
+                    <h4>How to Enable Transcript:</h4>
+                    <ol>
+                        <li>Make sure you're on a YouTube video page</li>
+                        <li>Look for the "Show transcript" button below the video</li>
+                        <li>If you don't see it, try clicking the "More actions" (...) button first</li>
+                        <li>Click "Show transcript" to open the transcript panel</li>
+                        <li>Try the extension again</li>
+                    </ol>
+                    <div class="button-group">
+                        <button id="auto-open-btn" class="auto-open-button">Try Auto-Open Transcript</button>
+                        <button id="debug-btn" class="debug-button">Debug Transcript Detection</button>
+                    </div>
+                </div>
+                <div id="debug-output" class="debug-output" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

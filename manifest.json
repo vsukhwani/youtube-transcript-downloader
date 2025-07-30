@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Transcript Downloader",
+  "version": "1.0",
+  "description": "A Chrome extension to download transcripts of YouTube videos.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["src/content/content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "48": "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  }
+}
