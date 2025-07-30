@@ -1,6 +1,6 @@
-# YouTube Transcript Downloader Chrome Extension
+# YouTube Transcript Downloader Browser Extension
 
-A Chrome extension that allows you to download transcripts from YouTube videos in both text and JSON formats.
+A browser extension that allows you to download transcripts from YouTube videos in both text and JSON formats.
 
 ## Features
 
@@ -12,16 +12,23 @@ A Chrome extension that allows you to download transcripts from YouTube videos i
 
 ## Installation
 
+### For Chrome:
 1. Open Chrome and navigate to `chrome://extensions/`
 2. Enable "Developer mode" in the top right corner
 3. Click "Load unpacked" and select the extension folder
-4. The extension icon should appear in your toolbar
+
+### For Microsoft Edge:
+1. Open Edge and navigate to `edge://extensions/`
+2. Enable "Developer mode" in the left sidebar
+3. Click "Load unpacked" and select the extension folder
+
+The extension icon should appear in your browser toolbar.
 
 ## How to Use
 
 1. **Navigate to a YouTube video** with captions/transcript available
 2. **Enable the transcript** by clicking the "Show transcript" button below the video
-3. **Click the extension icon** in your Chrome toolbar
+3. **Click the extension icon** in your browser toolbar
 4. **Select your preferred format** (Text or JSON)
 5. **Click "Download Transcript"** to save the file
 
@@ -60,7 +67,8 @@ A Chrome extension that allows you to download transcripts from YouTube videos i
 ### Extension not working
 - Refresh the YouTube page and try again
 - Check that you're on a `youtube.com/watch` URL
-- Ensure the extension is enabled in `chrome://extensions/`
+- Ensure the extension is enabled in your browser's extensions page
+- Try reloading the extension
 
 ### Download not starting
 - Check your browser's download settings

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "YouTube Transcript Downloader",
   "version": "1.0",
-  "description": "A Chrome extension to download transcripts of YouTube videos.",
+  "description": "Download transcripts from YouTube videos in text and JSON formats.",
   "permissions": [
     "activeTab",
     "scripting",
